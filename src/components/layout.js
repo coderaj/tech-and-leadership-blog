@@ -11,8 +11,8 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          ...scale(1),
+          marginBottom: rhythm(1),
           marginTop: 0,
         }}
       >
@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
         </Link>
       </h1>
     )
-  } else {
+  } /* else {
     header = (
       <h3
         style={{
@@ -46,13 +46,13 @@ const Layout = ({ location, title, children }) => {
         </Link>
       </h3>
     )
-  }
+  } */
   return (
     <div
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(35),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
