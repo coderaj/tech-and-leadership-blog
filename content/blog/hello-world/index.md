@@ -4,19 +4,16 @@ date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 ---
 
-This is my first post on my new fake blog! How exciting!
+This is my first post on my new blog! Hello World!
 
-I'm sure I'll write a lot more interesting things in the future.
+Sincere thanks to those who guided me through to where I am now, proud and humble to be _standing on the shoulders of giants_
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+> I have promises to keep, And miles to go before I sleep, And miles to go before I sleep
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Why this blog?
 
-![Chinese Salty Egg](./salty_egg.jpg)
+I've come across ebbs and flows in my professional career. This is one place to make notes, share and reflect both my technical and leadership learnings.
+
+> It is much easier to design how a perfect world
+> would work, when we don't have a real world
+> to deal with!

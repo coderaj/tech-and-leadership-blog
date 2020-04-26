@@ -1,68 +1,76 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Row, Col, Container } from "reactstrap"
+import "bootstrap/dist/css/bootstrap.css"
 
 import { rhythm, scale } from "../utils/typography"
+import Sidebar from "./sidebar"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
+  header = (
+    <h1
+      style={{
+        ...scale(1),
+        marginBottom: rhythm(1),
+        marginTop: 0,
+      }}
+    >
+      <Link
         style={{
-          ...scale(1),
-          marginBottom: rhythm(1),
-          marginTop: 0,
+          boxShadow: `none`,
+          color: `inherit`,
         }}
+        to={`/`}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } /* else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  } */
+        {title}
+      </Link>
+    </h1>
+  )
+
   return (
     <div
       style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(35),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        width: "100%",
+        height: "100%",
       }}
     >
-      <header>{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Container fluid>
+        <Row>
+          <Col md="2">
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              <Sidebar />
+            </div>
+          </Col>
+          <Col md="6">
+            <div
+              style={{
+                width: `100%`,
+                height: `100%`,
+                maxWidth: rhythm(25),
+                padding: `${rhythm(1)} ${rhythm(1 / 3)}`,
+              }}
+            >
+              {header}
+              {children}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="2"></Col>
+          <Col md="6">
+            <footer style={{ padding: "8px" }}>
+              notes created @ {new Date().getFullYear()}
+            </footer>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }

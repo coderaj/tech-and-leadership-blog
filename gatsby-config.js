@@ -3,13 +3,14 @@ module.exports = {
     title: `rajeev's notes`,
     author: {
       name: `rajeev`,
-      summary: `who lives and works in bengaluru building enterprise applications.`,
+      summary: `is a passionate software engineer, leader and technologist who makes his living building enterprise applications. He pens down his notes in his free time here.`,
+      linkedin: "https://www.linkedin.com/in/rajeevramanathan",
       location: "bengaluru",
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Technology and leadership blog.`,
     siteUrl: `https://tech-leadership-blog.netlify.com/`,
     social: {
-      twitter: `rajeev`,
+      twitter: `rajeevr7`,
     },
   },
   plugins: [

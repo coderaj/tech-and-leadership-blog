@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import { Container, Row, Col } from "reactstrap"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -21,51 +22,80 @@ const Bio = () => {
           }
         }
       }
+      inlogo: file(absolutePath: { regex: "/icons8-linkedin-50.png/" }) {
+        childImageSharp {
+          fixed(width: 20, height: 20) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      locationLogo: file(absolutePath: { regex: "/location.png/" }) {
+        childImageSharp {
+          fixed(width: 20, height: 20) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
       site {
         siteMetadata {
           author {
             name
             summary
-          }
-          social {
-            twitter
+            linkedin
+            location
           }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        A personal blog on programming, technology and leadership by{" "}
-        <strong>{author.name}</strong> <br />
-        {author.summary}
-        {` `}
-        {/*         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a> */}
-      </p>
-    </div>
+    <Container fluid style={{ padding: "0px" }}>
+      <Row style={{ justifyContent: "left" }}>
+        <Col md="1">
+          <Image
+            fixed={data.avatar.childImageSharp.fixed}
+            alt={author.name}
+            style={{
+              marginRight: rhythm(1 / 2),
+              marginBottom: 10,
+              minWidth: 50,
+              borderRadius: `100%`,
+            }}
+            imgStyle={{
+              borderRadius: `50%`,
+            }}
+          />
+        </Col>
+        <Col />
+      </Row>
+      <Row style={{ justifyContent: "left" }}>
+        <Col md="1">
+          <Image
+            fixed={data.inlogo.childImageSharp.fixed}
+            alt={"LinkedIn"}
+            style={{ marginBottom: 0 }}
+          />
+        </Col>
+        <Col md="8">
+          <p>
+            <a href={data.site.siteMetadata.author.linkedin}>{author.name}</a>
+          </p>
+        </Col>
+      </Row>
+      <Row style={{ justifyContent: "left" }}>
+        <Col md="1">
+          <Image
+            fixed={data.locationLogo.childImageSharp.fixed}
+            alt={"Bengaluru"}
+            style={{ marginBottom: 0 }}
+          />
+        </Col>
+        <Col md="9">{author.location}</Col>
+      </Row>
+    </Container>
   )
 }
 
