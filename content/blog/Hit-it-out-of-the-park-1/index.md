@@ -75,17 +75,17 @@ Days went by, Henry stood tall among others for 3 beliefs he had -
 
 1. People are rational - The right intentions will be understood by people by giving more time.
 
-- As a leader, he believed he had the right intentions. He selfdeclared those intentions in every opportunity and never tried to convince anyone. Instead he persuaded on _Why_ he believed something needs to be done in a certain way in a certain time.
+|As a leader, he believed he had the right intentions. He selfdeclared those intentions in every opportunity and never tried to convince anyone. Instead he persuaded on _Why_ he believed something needs to be done in a certain way in a certain time.
 
 2. Better organizational changes are not one person's job. It is not manager's / director's / lead's job. It is everyone's job
 
-- It requires like minded people who initially step up for others to follow. Most times, managers overprotect their team to save face for good intentions. Once it is proved that the team is not impacted by the change most managers agree. So convincing team members two levels down is also a senior leader's job.
+| It requires like minded people who initially step up for others to follow. Most times, managers overprotect their team to save face for good intentions. Once it is proved that the team is not impacted by the change most managers agree. So convincing team members two levels down is also a senior leader's job.
 
-- His door was open for people at different career levels. As a junior, we could always walk up to him on why we think the organization is not doing something right. He was very particular in separating the people from the problem. He never allowed to pick person instead wanted us to talk about what the problem is.
+| His door was open for people at different career levels. As a junior, we could always walk up to him on why we think the organization is not doing something right. He was very particular in separating the people from the problem. He never allowed to pick person instead wanted us to talk about what the problem is.
 
 3. He knew it was lonely at the top
 
-- He needs to share a drink later in the day with the same folks he had a tough meeting in the morning. He was not doing a charity or service by exhausting himself, I admired he could establish trust, manage his time between both Headquarters and internal teams.
+| He needs to share a drink later in the day with the same folks he had a tough meeting in the morning. He was not doing a charity or service by exhausting himself, I admired he could establish trust, manage his time between both Headquarters and internal teams.
 
 Not everyone liked him, but the numbers spoke for themselves. The number of projects delivered from his organization grew rapidly and he created jobs for 150+ people in 4 years.
 
