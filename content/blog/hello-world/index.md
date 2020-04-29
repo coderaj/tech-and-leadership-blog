@@ -1,7 +1,6 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "First is always special"
 ---
 
 This is my first post on my new blog! Hello World!
@@ -17,3 +16,7 @@ I've come across ebbs and flows in my professional career. This is one place to 
 > It is much easier to design how a perfect world
 > would work, when we don't have a real world
 > to deal with!
+
+Inspired by,
+
+Stan Lee, those ideas that _create_ super heroes out of everyday humans, that can save the world.

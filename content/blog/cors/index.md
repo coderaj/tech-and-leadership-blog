@@ -1,3 +1,8 @@
+---
+title: Cors
+description: "Browser vs Rest client"
+---
+
 #### I cannot download from browser
 
 > My curl request works, my api call from postman works but I cannot XHR from browser to download a file
@@ -22,10 +27,14 @@ Not to be confused with Content Security Policy which helps importing js files f
 Additional notes:
 
 - Preflight requests
-- OPTIONS and TRACE 405 - Method not allowed
+  - If HTTP verb is anything other than GET/POST/PUT and if it has custom headers like application/xml or application/json browser initiates a pre-flight request - OPTIONS method automatically
+  - Server responds with allowed origins for eg bankbazaar.com as a security measure before forwarding the original request
+- OPTIONS and TRACE 405 - Method not allowed - Security loophole
 
 References:
 
 https://medium.com/@baphemot/understanding-cors-18ad6b478e2b
 
 https://medium.com/@f2004392/cors-preflight-request-options-9d05b9248e5a
+
+https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
