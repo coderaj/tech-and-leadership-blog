@@ -1,6 +1,7 @@
 ---
 title: Hello World
 description: "First is always special"
+date: "2020-04-15T22:12:03.284Z"
 ---
 
 This is my first post on my new blog! Hello World!

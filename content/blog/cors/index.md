@@ -1,6 +1,7 @@
 ---
 title: Cors
 description: "Browser vs Rest client"
+date: "2020-04-27T22:12:03.284Z"
 ---
 
 #### I cannot download from browser

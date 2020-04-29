@@ -1,6 +1,7 @@
 ---
 title: Hit it out of the park #1
 description: "Why do you want to be a leader?"
+date: "2020-04-29T22:12:03.284Z"
 ---
 
 |10 to 12 years ago,
