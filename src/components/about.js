@@ -12,7 +12,12 @@ const About = props => {
       <Button
         color="white"
         onClick={toggle}
-        style={{ align: "left", padding: "1px" }}
+        style={{
+          align: "left",
+          padding: "1px",
+          color: "${props => props.theme.colors.textColor}",
+          backgroundColor: "${props => props.theme.colors.background}",
+        }}
       >
         About
       </Button>
