@@ -3,7 +3,8 @@ module.exports = {
     title: `rajeev's notes`,
     author: {
       name: `rajeev`,
-      summary: `is a passionate software engineer, leader and technologist who makes his living building enterprise applications. He pens down his notes in his free time here.`,
+      summary: `is a passionate software engineer, leader, and technologist who makes his living building enterprise applications. He pens down his notes in his free time here.`,
+      disclaimer: `These notes are author's personal learnings, views and opinions, and not facts unless otherwise stated explicitly with references. The notes don't represent any organization he worked, works with or institutions he is associated with.`,
       linkedin: "https://www.linkedin.com/in/rajeevramanathan",
       location: "bengaluru",
     },

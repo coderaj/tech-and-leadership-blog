@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { rhythm, scale } from "../utils/typography"
 import Sidebar from "./sidebar"
+import Disclaimer from "./disclaimer"
 
 const Layout = ({ location, title, children }) => {
   let header
@@ -67,6 +68,7 @@ const Layout = ({ location, title, children }) => {
           <Col md="6">
             <footer style={{ padding: "8px" }}>
               notes created @ {new Date().getFullYear()}
+              <Disclaimer />
             </footer>
           </Col>
         </Row>
