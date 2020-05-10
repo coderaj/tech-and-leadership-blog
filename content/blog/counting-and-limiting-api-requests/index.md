@@ -30,6 +30,10 @@ So if we specify a rate-limit of 1200 requests per hour, nginx spans the limit e
 
 This might look trivial but helps for better wording for API consumers that 1200 req/hr doesn't mean all 1200 requests can be placed at once.
 
+In summary, nginx does rate limiting based on leaky bucket algorithm. To efficiently support quota limits choose token bucket or a sliding window algorithm supported by other load balancers/reverse proxies like HAProxy.
+
+If you're already using a side car proxy like Istio, it supports defining quota limit per service. Envoy is not well documented although quota limiting is achieved through custom actions.
+
 ---
 
 References:
@@ -40,3 +44,5 @@ References:
 | https://www.hostingadvice.com/how-to/nginx-vs-apache/                             | A comparison of nginx vs apache - Recommended: nginx for high performance |
 | https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/     |                   Nginx documentation on rate limiting                    |
 | https://www.eclipse.org/jetty/documentation/current/limit-load.html               |               Jetty max connections limit, acceptQueueSize                |
+| https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm          |             Comparison of different rate limiting algorithms              |
+| https://istio-releases.github.io/v0.1/docs/tasks/rate-limiting.html               |                            Istio rate-limiting                            |
